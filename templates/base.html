@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     {% endblock %}
 
-    {% extra css %}
+    {% block extra_css %}
     {% endblock%}
 
     {% block corejs %}
@@ -25,17 +25,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     {% endblock %}
 
-    {% extra js %}
+    {% block extra_js %}
     {% endblock %}
     
-    <title>Kris Kringle {% block extra title %}{% endblock %}</title>
+    <title>Kris Kringle {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top"></header>
     
     {% if messages %}
         <div class="message-container"></div>
-    {& endif %}
+    {% endif %}
 
     {% block page_header %}
     {% endblock %}

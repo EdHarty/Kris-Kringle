@@ -1,0 +1,1 @@
+web: gunicorn kris_kringle.wsgi:application

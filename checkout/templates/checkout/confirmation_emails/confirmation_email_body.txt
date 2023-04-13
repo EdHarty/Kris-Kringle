@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}!
+
+Kris Kringle would like to confirm that your order has been successful. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+Customer phone number: {{ order.phone_number }}.
+
+For any queries you can contact us at {{ contact_email }}.
+
+We appreciate your custom!
+
+Many Thanks,
+
+Kris Kringle

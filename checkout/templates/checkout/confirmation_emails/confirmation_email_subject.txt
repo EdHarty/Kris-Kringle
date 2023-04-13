@@ -1,0 +1,1 @@
+Kris Kringle Order Confirmation Number {{ order.order_number }}

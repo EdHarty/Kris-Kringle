@@ -71,4 +71,4 @@ def unsubscribe(request):
         'form': form,
     }
 
-    return render(request, 'Unsubscribe.html', context)
+    return render(request, 'unsubscribe.html', context)

@@ -37,10 +37,15 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
+      <div id="delivery-banner" class="row text-center">
+        <div class="col bg-black text-white">
+            <h4 class="logo-font my-1">Free Delivery on orders over €{{ free_delivery_threshold}}!</h4>
+        </div>
+      </div>
       <div id= "topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class = "col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
-              <h2 class="logo-font text-black my-0"><strong>Kris Kringle</strong></h2>
+              <img id="kriskringle" src="media/kriskringle.png" alt="christmas gifts" width="140" height="120">
             </a>
         </div>
         <div class = "col-12 col-lg-4 my-auto py-1 py-lg-0 ">
@@ -105,11 +110,7 @@
       {% include 'includes/main-nav.html' %}
     </nav>
   </div>
-  <div id="delivery-banner" class="row text-center">
-  <div class="col bg-black text-white">
-      <h4 class="logo-font my-1">Free Delivery on orders over €{{ free_delivery_threshold}}!</h4>
-  </div>
-</div>
+  
 </header>
 
 {% if messages %}
@@ -135,6 +136,46 @@
 
 {% block content %}
 {% endblock %}
+
+<footer class="page-footer font-small pt-5 mt-5">
+  <div class="container text-center text-md-left">
+      <div class="row">
+          <div class="col-md-6 mt-md-0 mb-3">
+              <h5 class="text-white mb-3">Newsletter</h5>
+              <p class="small text-white">Subsribe to our Newsletter below!</p>
+              <form class="newsletter-form" action="{% url 'newsletter' %}" method="POST">
+                {% csrf_token %}
+                  <div class="input-group mb-3">
+                      <input class="form-control" type="email" name="email" placeholder="Enter your email address"
+                          aria-label="Recipient's email" aria-describedby="subscribe-button">
+                      <button class="btn btn-primary" id="subscribe-button" type="submit">
+                          <i class="fas fa-paper-plane"></i>
+                      </button>
+                  </div>
+              </form>
+              <a href="{% url 'unsubscribe' %}" class="text-white" >To unsubscribe, please click here</a>
+          </div>
+
+          <div class="col-md-3 mb-md-0 mb-3">
+              <h5 class="text-uppercase">Business</h5>
+              <ul class="list-unstyled">
+                  <li>
+                      <a href="" class="text-white">Blog</a>
+                  </li>
+                  
+                  <li>
+                      <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
+                  </li>
+
+                  <li>
+                      <a href="{% url 'account_signup' %}" class="text-white">Register</a>
+                  </li>
+
+                  <li>
+                      <a href="{% url 'account_login' %}" class="text-white">Login</a>
+                  </li>
+              </ul>
+          </div>
 
 {% block postloadjs %}
 <script type="text/javascript">

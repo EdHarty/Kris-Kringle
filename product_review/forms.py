@@ -1,5 +1,5 @@
 from django import forms
-from .models import Review
+from .models import ProductReview
 
 RATINGS = [(1, 'Indifferent'),
            (2, 'Bad'),
@@ -11,7 +11,7 @@ RATINGS = [(1, 'Indifferent'),
 class ReviewForm(forms.ModelForm):
 
     class Meta:
-        model = Review
+        model = ProductReview
         fields = ('title', 'content', 'rating')
 
     rating = forms.ChoiceField(label='What is your rating?',

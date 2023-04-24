@@ -17,7 +17,7 @@
 #review-form input:not(.form-check-input),
 #review-form textarea {
     margin-bottom: 12px;
-    background-color: #f4f6fc;
+    background-color: white;
     padding: 8px 12px;
 }
 
@@ -27,5 +27,5 @@
 
 #review-form input:not(.form-check-input):focus,
 #review-form textarea:focus {
-    background-color: #f4f6fc;
+    background-color: white;
 }

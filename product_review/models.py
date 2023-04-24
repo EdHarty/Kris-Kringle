@@ -9,10 +9,10 @@ class ProductReview(models.Model):
     """ Product review model """
     product = models.ForeignKey(Product,
                                 on_delete=models.CASCADE,
-                                related_name='product_reviews')
+                                related_name='product_review')
     author = models.ForeignKey(User,
                                on_delete=models.CASCADE,
-                               related_name='product_reviews')
+                               related_name='product_review')
     title = models.CharField(max_length=220)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)

@@ -8,20 +8,20 @@ from .forms import ReviewForm
 
 @login_required
 def reveal_reviews(request):
-    """ A view to reveal the user's product reviews """
+    """ A view to reveal the user's product review """
     reviews = ProductReview.objects.filter(author=request.user)
 
-    template = 'product_reviews/product_reviews.html'
+    template = 'product_review.html'
 
     context = {
-        'product_reviews': reviews,
+        'product_review': reviews,
     }
 
     return render(request, template, context)
 
 
 @login_required
-def add_product_reviews(request, product_id):
+def add_product_review(request, product_id):
     """ To add a review to a product """
     product = get_object_or_404(Product, pk=product_id)
     user_review = ProductReview.objects.filter(
@@ -51,7 +51,7 @@ def add_product_reviews(request, product_id):
         else:
             form = ReviewForm()
 
-    template = 'product_reviews/add_product_reviews.html'
+    template = 'product_review/add_product_review.html'
 
     context = {
         'product': product,
@@ -62,7 +62,7 @@ def add_product_reviews(request, product_id):
 
 
 @login_required
-def edit_product_reviews(request, review_id):
+def edit_product_review(request, review_id):
     """ To edit a review """
     review = get_object_or_404(ProductReview, pk=review_id)
 
@@ -88,7 +88,7 @@ def edit_product_reviews(request, review_id):
         messages.info(request, f'You are editing your review for \
             {review.product.name}')
 
-    template = 'product_reviews/edit_product_review.html'
+    template = 'product_review/edit_product_review.html'
 
     context = {
         'form': form,

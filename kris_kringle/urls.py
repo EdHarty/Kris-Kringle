@@ -29,6 +29,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('newsletter/', include('newsletter.urls')),
     path('blog/', include('blog.urls')),
+    path('product_reviews/', include('product_reviews.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'kris_kringle.views.handler404'

@@ -16,7 +16,7 @@ def blog(request):
         'posts': all_posts
     }
 
-    return render(request, 'blogs.html', context)
+    return render(request, 'blog.html', context)
 
 
 def post_detail(request, post):
@@ -55,7 +55,7 @@ def add_post(request):
         'form': form,
     }
 
-    return render(request, 'blog/add_post.html', context)
+    return render(request, 'add_post.html', context)
 
 
 @login_required

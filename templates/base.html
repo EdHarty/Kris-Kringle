@@ -75,6 +75,7 @@
                       {% if request.user.is_authenticated %}
                           {% if request.user.is_superuser %}
                               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                              <a href="{% url 'add_post' %}" class="dropdown-item">Blog Management</a>
                           {% endif %}
                           <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                           <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -160,7 +161,7 @@
               <h5 class="text-uppercase"><u>Store</u></h5>
               <ul class="list-unstyled">
                   <li>
-                      <a href="" class="text-white">Blog</a>
+                      <a href="{% url 'blog' %}" class="text-white">Blog</a>
                   </li>
                   
                   <li>

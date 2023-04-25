@@ -35,5 +35,27 @@ A live website can be found [here](https://kriskringle.herokuapp.com/).
 
 [Go to the top](#table-of-contents)
 
-The main focus for this E-commerce store was to make it instinctive and easy to navigate. It lends itself to all shoppers in need of a gift for the friends or loved ones. Whether you are an organised or last minute customer this store provides products that are suitable and relevant to Christmas.
+The main focus for this E-commerce store was to make it instinctive an
+d easy to navigate. It lends itself to all shoppers in need of a gift for the friends or loved ones. Whether you are an organised or last minute customer this store provides products that are suitable and relevant to Christmas.
+
+<a name="strategy"></a>
+
+## 1.1. Strategy
+
+[Go to the top](#table-of-contents)
+
+### Project Goals
+
+* Responsive design to make the website accessible on different screen sizes.
+
+* Ensure  that the navigation of the store is effortless and intuitive.
+
+* The website design and colours are easy on the eye.
+
+* The website payment system is secure and easy to use.
+
+### User Goals:
+
+
+
 

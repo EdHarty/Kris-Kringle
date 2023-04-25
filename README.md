@@ -96,6 +96,13 @@ I used the GitHub projects board to manage my project. This ensured that I kept 
 
 <img width="956" alt="AG1 (2)" src="https://user-images.githubusercontent.com/88341568/234377636-70b4efd7-0170-46f3-b1cc-d670e83f35a1.png">
 
+<img width="956" alt="AG3 (2)" src="https://user-images.githubusercontent.com/88341568/234379593-34ee84fd-13b3-4efd-a6d5-ff0411d8f924.png">
+
+<img width="960" alt="AG5 (2)" src="https://user-images.githubusercontent.com/88341568/234379730-84d7d6ea-4fed-44e7-9de8-2f295c3f954c.png">
+
+<img width="956" alt="AG6 (2)" src="https://user-images.githubusercontent.com/88341568/234379983-5b0afdb9-6a86-4dfc-8602-d7b4ca779c96.png">
+
+
 
 
 

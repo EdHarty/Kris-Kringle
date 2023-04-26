@@ -236,6 +236,51 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
 
+Newsletter model structure:
+
+```python
+class UserContact(models.Model):
+    """ A model for user contact form """
+
+    name_surname = models.CharField(max_length=200, null=False, blank=False)
+    email = models.EmailField(max_length=200, null=False, blank=False)
+    details = models.CharField(max_length=55, null=False, blank=False)
+    enquiry = models.TextField(max_length=220, null=False, blank=False)
+
+
+class NewsLetter(models.Model):
+    """ A model for subscription to newsletter """
+
+    date = models.DateTimeField(auto_now_add=True)
+    email = models.EmailField(max_length=200, null=False, blank=False)
+
+    def __str__(self):
+        return self.email
+        
+Blog model structure:
+
+```python
+class Post(models.Model):
+    """
+    Blog Model
+    """
+    title = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=250, unique=True)
+    excerpt = models.TextField(blank=True)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="blog_posts"
+    )
+    status = models.IntegerField(choices=STATUS, default=0)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['-status', '-created_on']
+
+    def __str__(self):
+        return self.title
 
 
 

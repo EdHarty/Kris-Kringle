@@ -512,6 +512,197 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     -   Balsamiq was used to create the wireframes during the design process.
 
 
+-   [Google Fonts](https://fonts.google.com/)
+    -   Google fonts were used to import the **"Be Vietnam Pro"** font into the style.css file which is used on all pages throughout the project.
+-   [GitHub](https://github.com/)
+    -   GitHub was used to store the project's code after being pushed from Git.
+
+<a name="testing"></a>
+
+# 4. Testing
+
+[Go to the top](#table-of-contents)
+### Responsive Tools
+I used [Am I Responsive](http://ami.responsivedesign.is) to check if site was reponsive on other devices.
+
+### W3C Validator Tools
+
+#### HTML:
+I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
+
+#### CSS:
+I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within CSS stylesheets.
+
+### JavaScript:
+I used [JS Hint](https://jshint.com/) to check for any errors within all my JavaScript script files. JS Hint showed warnings but no errors.
+
+### Python:
+
+## Manual Testing
+
+I have tested my site on Safari and google chrome on multiple devices:
+
+-   iPhone X
+-   iPhone XS Max
+-   iPad Pro
+-   MacBook Pro
+
+Please find below my testing process for mobile and web:
+
+### Navigation Bar
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Home page | By clicking the "home" link in the navigation bar or on the store logo, the browser redirects me to the home page. | PASS
+All products page | By clicking the "All Products" link in the navigation bar, the category shows a dropdown list with sort/filter options. | PASS
+Kris Kringle page | By clicking the "Kris Kringle" link in the navigation bar, the browser redirects me to the Kris Kringle landing page. | PASS
+Christmas Gifts page | By clicking the "Christmas Gifts" link in the navigation bar, it redirects me to the Christmas Gifts product page. | PASS
+Christmas Lighting page | By clicking the "Christmas Lighting" link in the navigation bar, the browser redirects me to the Christmas Lighting product page. | PASS
+Special Offers page | By clicking the "Special Offers" link in the navigation bar, the category shows a dropdown list to sort/filter options. | PASS
+Register page | By clicking the "register" link in the navigation bar, the browser redirects me to the register page. | PASS
+Login / Logout page | By clicking the "login" or "logout links in the navigation bar, the browser redirects me to the login or logout page. | PASS
+Shopping Bag page | By clicking the "Shopping Bag" icon in the navigation bar, the browser redirects me to the basket page. | PASS
+My Profile page | By clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. | PASS
+Product management page | By clicking the "product management" link as a site admin in the navigation bar, I am directed to the product management page. | PASS
+Blog management page | By clicking the "blog management" link as a sie admin in the navigation bar, the browser redirects me to the blog management page. | PASS
+Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
+Foreground & background colour | Checked foreground information is not distracted by background elements. | PASS
+Text | Checked that all fonts and colours used are consistent. | PASS
+
+
+### Footer
+
+All Pages:
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Subscribe to newsletter | By inputting my email in the newsletter form in the footer, I am directed to the home page. A success message pop up is visible. | PASS
+Unsubscribe to newsletter page | By clicking the "unsubscribe" link in the footer, I am directed to the newsletter unsubscribe page. | PASS
+Contact Us page | By clicking the "contact us" link in the footer, I am directed to the contact page. | PASS
+Register page | By clicking the "Register" link in the footer, I am directed to the register page.| PASS
+Login page | By clicking the "login" link in the footer, I am directed to the login page. | PASS
+Facebook | By clicking the Facebook icon, a new tab opens and redirects to my Facebook website. | PASS
+Twitter | By clicking the Twitter icon, a new tab opens to the Twitter website. | PASS
+Instagram | By clicking the Instagram icon, a new tab opens to the Instagram website. | PASS
+
+### Home page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view. | PASS
+
+### Products page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | Media assets are displayed properly and are responsive on all devices. | PASS
+Responsiveness | Check every element on the page for scalability in mobile, tablet and desktop view.| PASS
+Sort filter | Check the filter functionality by selecting each option. | PASS
+Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only accessible to the Site Admin. | PASS
+
+
+### Products details page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly and are responsive on all devices. | PASS
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Size selector | Check the size selector functionality by adding each option to shopping bag. | PASS
+Quantity Selector | Check the plus and minus function. | PASS
+Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only accessible to the Site Admin. | PASS
+
+### Shopping bag page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly and are responsive on all devices. | PASS
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Remove item from bag | Clicking remove link on an product removes the product from the bag. | PASS
+Quantity Selector | Check the plus and minus function. | PASS
+Free delivery threshold | Adding products to the bag under the €50 threshold for free shipping and over the threshold. A message alert diplayed if under. | PASS
+
+### Checkout page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Media | All media assets are displayed properly and are responsive on all devices. | PASS
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Checkout form | Filling in the form with the correct/incorrect details. If incorrect, error message displayed | PASS
+Save details checkout | Check if saving my details using the checkbox saves/updates my profile details. | PASS
+Card authentication | Used the valid Stripe test card details and invalid details to see alert messages. | PASS
+
+### Checkout success page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Order history | BY clicking on the order number, Iam directed to a past order confirmation summary. | PASS
+Updating my profile | When updating my delivery information, this is seen on the checkout page. | PASS
+
+### Product management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Adding a product | When adding a new product, the product is added to the correct category and can found using the search bar. | PASS
+Uploading an image | When uploading a new image, the uploaded file name is displayed. | PASS
+
+### Blog management page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Adding a Blog post | When adding a blog post, the blog post is added to the blog main blog section. | PASS
+Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image also shows. | PASS
+
+<a name="deployment"></a>
+
+# 5. Deployment
+[Go to the top](#table-of-contents)
+
+[Go to the top](#table-of-contents)
+
+I used the terminal to deploy my project locally. To do this I had to:
+
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code editor (GitPod in my case) using the clone link.
+3. Open the terminal within GitPod
+4. Enter "python3 manage.py runserver into the terminal.
+5. Go to localhost address on my web browser.
+6. All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+
+1. Create Heroku App
+2. Install dj_database_url and psycopg2-binary in my local environment
+3. Freeze requirements.txt file
+4. In settings.py import dj_database_url
+5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
+6. Comment out the local default database
+7. Add the Heroku database url via dj_database_url.parse()
+8. Run migrations to the Postgres database
+9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
+10. Create a SuperUser for the Postgres database
+11. Configure the database so that when the app is running on Heroku it uses the Postgres database and when it's running locally it uses the SQLite database
+12. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app
+13. Disable Heroku collect static
+14. Add the Heroku hostname to allowed hosts in settings.py
+15. Generate a new Django secret key and add this to the Heroku config variables
+16. Replace the secret key in settings.py to grab it from the environment
+17. Set debug to True only if the environment is a development environment
+18. Commit changes and deploy to GitHub and Heroku
+19. Create an AWS account
+20. Create an S3 bucket
+21. Configure the S3 bucket settings and policies
+22. Create and configure the IAM service
+23. In the terminal install Boto3 and Django-storages
+24. Freeze requirements.txt file
+25. Add a statement to the AWS bucket if the environment is "USE_AWS"
+26. Add AWS keys to the Heroku config variables
+27. Create custom storage classes for media and static files
+28. In settings.py add a statement to use the static and media storage class and locations
+29. Commit and push to GitHub and Heroku
+30. In the S3 bucket create a new folder for media
+31. Upload all used images to the media file in the S3 bucket
+32. Add the Stripe keys to the Heroku config variables
+33. Create a new webhook endpoint from the Stripe dashboard
+34. Add all the Stripe keys to the Heroku config variables
+
+<a name="seo"></a>
+
 
 
 

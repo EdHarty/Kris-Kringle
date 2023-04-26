@@ -17,7 +17,7 @@ A live website can be found [here](https://kriskringle.herokuapp.com/).
             -   [Strategy Table](#strategy-table)
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
-    -   [1.4. Surface](#surface)
+    -   [1.4. Design](#design)
 -   [2. Features](#features)
 -   [3. Technologies Used](#technologies-used)
 -   [4. Testing](#testing)
@@ -236,6 +236,10 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
 
+```
+
+
+
 Newsletter model structure:
 
 ```python
@@ -256,6 +260,8 @@ class NewsLetter(models.Model):
 
     def __str__(self):
         return self.email
+
+```
         
 Blog model structure:
 
@@ -280,7 +286,233 @@ class Post(models.Model):
         ordering = ['-status', '-created_on']
 
     def __str__(self):
-        return self.title
+        return self.title       
+```
+
+Product Review model structure:
+
+```python
+class ProductReview(models.Model):
+    """ Product review model """
+    product = models.ForeignKey(Product,
+                                on_delete=models.CASCADE,
+                                related_name='product_review')
+    author = models.ForeignKey(User,
+                               on_delete=models.CASCADE,
+                               related_name='product_review')
+    title = models.CharField(max_length=220)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    rating = models.IntegerField(validators=[MinValueValidator(1),
+                                             MaxValueValidator(5)])
+
+    class Meta:
+        ordering = ['-created_on']
+
+    def __str__(self):
+        return f'{self.product} review by {self.author}'
+```
+
+Product model structure:
+
+```python
+
+class Category(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
+
+class Product(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
+                                 blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+```
+Profile model structure:
+
+```python
+
+class UserProfile(models.Model):
+    """
+    A user profile model for maintaining default
+    delivery information and order history
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_street_address1 = models.CharField(max_length=80, null=True,
+                                               blank=True)
+    default_street_address2 = models.CharField(max_length=80, null=True,
+                                               blank=True)
+    default_town_or_city = models.CharField(max_length=40, null=True,
+                                            blank=True)
+    default_county = models.CharField(max_length=80, null=True, blank=True)
+    default_country = CountryField(blank_label='Country',
+                                   null=True, blank=True)
+    default_postcode = models.CharField(max_length=20, null=True, blank=True)
+    default_phone_number = models.CharField(max_length=20, null=True,
+                                            blank=True)
+
+    def __str__(self):
+        return self.user.username
+
+
+@receiver(post_save, sender=User)
+def create_or_update_user_profile(sender, instance, created, **kwargs):
+    """
+    Create or update the user profile
+    """
+    if created:
+        UserProfile.objects.create(user=instance)
+    # Existing users: just save the profile
+    instance.userprofile.save()
+    
+```
+
+<a name="skeleton"></a>
+
+## 1.3. Skeleton
+
+[Go to the top](#table-of-contents)
+
+### Wire-frames
+
+<a name="design"></a>
+
+## 1.4. Design
+
+[Go to the top](#table-of-contents)
+
+### Colours
+### Typography
+
+<a name="features"></a>
+
+# 2. Features
+
+[Go to the top](#table-of-contents)
+
+### All Pages
+
+- The navigation bar is located at the top of all pages. This contains the product search bar, my account icon and the shopping bag icon. Another section contains the navigation for the products. The navigation bar is dynamic. The site user options change when logged in or out.
+
+- The footer is located at the bottom of all pages. This contains social media links, a form to subscribe/unsubscribe to the newsletter and store links.
+- The store logo is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
+
+### Sign Up Page
+- Site users signup entering thier email address and password. There is password confirmation, the password must be identical to the one entered above.
+
+### Login Page
+- To log in site users must enter their email address and password to enter.
+- The site user must activate their account via email to log in.
+- If an account has not been created. The user can click a link to be redirected to the signup page.
+- If the site user details are entered incorrectly, a message is displayed.
+
+### Logout Page
+- When logging out using the navigation bar, the site user is redirected to a sign-out page to confirm.
+
+### Landing Page
+- A explore the collection button directs the customer to the all products page. This gives the customer access to all of the available products.
+
+### Products Page
+- The site user can locate specific products by category, using the navigation bar.
+- A count of the search results within the category is displayed.
+- The site user can filter products by price, rating, name and category.
+- All products have an image, product name, price, category and rating.
+- A back to top button, directs the site user to the top of the page.
+- The edit and delete buttons are available to the site administrator, allowing products to be edited or deleted quickly.
+
+### Products Details Page
+- Each product will display an image, product name, description, price, size, category, rating, quantity selector, keep shopping button and an add to bag button.
+- The edit and delete buttons can be seen and used by a site administrator.
+- The minus button is disabled when the quantity selected is one.
+- A success message will pop up to confirm the product has been added to the bag.
+
+### Shopping bag Page
+- Products are displayed as line items, showing an image, a product name, the size if relevant, a SKU, the price of item, the quantity, the quantity selector and a subtotal.
+- The minus button is disabled when the quantity selected is one.
+- A sum total of the contents of the bag is also shown with the shopping bag total, delivery fee.
+- If the free delivery threshold has not been met an alert message is shown, informing the user that they can get free delivery if they spend more .
+
+### Checkout Page
+- The customer can fill out the delivery details form that has Stripe integration.
+- The customer can select a checkbox to save their details for next time. The card details are not saved.
+- The customers order summary is shown, this ensure the order is correct before continuing and checking out.
+- An alert is displayed to the customer informing them of the amount they will be charged.
+
+### Checkout Success Page
+- Displays order summary, with an order number.
+- Shows that an email has been sent to confirm order.
+
+### My Profile Page
+- The site user can update their delivery details and this will then be upadated on the checkout page.
+- The site user can view their order history. The order number can be selected to view any previous orders. 
+
+### Product Management Page
+- This is for site admin only.
+- Displays a form to add more products to the store.
+
+### Blog Management Page
+- This is for site admin only.
+- Displays a form to add more blog posts.
+
+### Newsletter Subscribe Page
+- Site users enter their email address to subscribe to the newsletter.
+- Once they are successfully subscribed to the newsletter, they are redirected to the home page. A success alert message will be displayed confirming successful subscription to the newsletter
+- An error message will appear if user has already subscribed.
+
+### Newsletter Unsubscribe Page
+- The site user must enter thier email address to unsubscribe from the newsletter.
+- Once unsubscribed from the newsletter, the site user will be redirected to the home page. A success alert message will be displayed confirming successful unsubscription to the newsletter
+
+## 3. Technologies Used
+
+[Go to the top](#table-of-contents)
+
+-   [HTML5](https://en.wikipedia.org/wiki/HTML)
+    -   The project uses HyperText Markup Language.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS)
+    -   The project uses Cascading Style Sheets.
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    -   The project uses JavaScript.
+-   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+    -   The project uses Python.
+-   [Django](https://www.djangoproject.com/)
+    -   The project uses Django as the main framework.
+-   [Boostrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+    -   The project uses Bootstrap 4.
+-   [PostgreSQL](https://www.postgresql.org/)
+    -   The project uses PostgreSQL as a database.
+-   [AWS](https://aws.amazon.com/)
+    -   The project uses Amazon Web Services to host all static and media files.
+-   [Gitpod](https://www.gitpod.io/)
+    -   The project uses Gitpod.
+-   [Chrome](https://www.google.com/intl/en_uk/chrome/)
+    -   The project uses Chrome to debug and test the source code using HTML5.
+-   [Heroku](https://www.heroku.com/)
+    -   The project is deployed and hosted by Heroku.
+-   [Balsamiq](https://balsamiq.com/)
+    -   Balsamiq was used to create the wireframes during the design process.
+
+
+
 
 
 

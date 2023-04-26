@@ -58,6 +58,7 @@ select option[value=""] {
 }
 
 .loading-spinner {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;

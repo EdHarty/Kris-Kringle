@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', ')gt^du0*+70z_o*2yto7s46mq5qny7y#vx5gwzs(_0((i0bfya')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['kriskringle.herokuapp.com', 'localhost']
 

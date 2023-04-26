@@ -4,10 +4,10 @@ html {
 
 body {
     background: url('/media/kris_background.png') no-repeat center center fixed;
-    background-size: cover;
+    background-size: cover; 
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -27,6 +27,10 @@ footer {
 .logo-font {
     text-transform: uppercase;
 }
+
+#logo {
+    margin-left: 9px;
+  }
 
 .main-logo-link {
     width: fit-content;

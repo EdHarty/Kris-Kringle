@@ -134,10 +134,6 @@ else:
         }
     }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://wpqhcgfy:pBnzRlDEiK68ynKAInmGf9G5Xbudsj2G@mel.db.elephantsql.com/wpqhcgfy')
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

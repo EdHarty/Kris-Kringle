@@ -5,6 +5,14 @@
 <link rel="stylesheet" href="{% static 'product_review/css/product_review.css' %}">
 {% endblock %}
 
+{% block page_header %}
+  <div class="container header-container">
+    <div class="row">
+      <div class="col"></div>
+    </div>
+  </div>
+{% endblock %}
+
 {% block content %}
 
     <!-- Page overlay to cover image -->
@@ -14,7 +22,7 @@
         <!-- Reviews main header -->
         <div class="row py-4 border-top border-bottom">
             <div class="col text-center">
-                <h1 class="logo-text">My Product Reviews</h1>
+                <h1 class="logo-text text-black">My Product Reviews</h1>
             </div>
         </div>
 
@@ -23,7 +31,7 @@
             <div class="col-10 offset-1 col-lg-8 offset-lg-2">
 
                 <div class="review-container mt-4">
-                    {% if reviews%}
+                    {% if reviews %}
                         {% for review in reviews %}
                             <div class="my-4 pb-4 border-bottom">
                                 <div class="review-product">
@@ -43,7 +51,7 @@
                             </div>
                         {% endfor %}              
                     {% else %}
-                        <p class="lead mb-5">You haven't review any products yet.</p>
+                        <p class="lead mb-5">You haven't reviewed any products yet.</p>
                         <a href="{% url 'products' %}" class="btn btn-main hvr-back-pulse btn-lg">
                             <i class="fas fa-chevron-left"></i>
                             <span class="text-uppercase">Explore Products</span>

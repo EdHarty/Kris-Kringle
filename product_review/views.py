@@ -10,6 +10,7 @@ from .forms import ReviewForm
 def reveal_reviews(request):
     """ A view to reveal the user's product review """
     reviews = ProductReview.objects.filter(author=request.user)
+    print(reviews)
 
     template = 'product_review.html'
 

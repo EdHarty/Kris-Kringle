@@ -703,6 +703,67 @@ For the final deployment to Heroku, I had to:
 
 <a name="seo"></a>
 
+# 6. SEO
+[Go to the top](#table-of-contents)
+
+To improve the search engine optimisation (SEO) of the website:
+
+- I added keywords in a meta tag to my base.html. The keywords were researched using [WordTracker](https://www.wordtracker.com/), there are a number of short-tail and long-tail keywords.
+
+- The list of keywords are as follows:
+    - Christmas gift.
+    - Christmas gift ideas.
+    - Christmas gifts for men.
+    - Christmas gifts for women.
+    - Good christmas gift.
+    - Christmas last minute gifts.
+
+<a name="marketing"></a>
+
+# 7. Marketing
+[Go to the top](#table-of-contents)
+
+I decided to use content marketing, Social media and email marketing as marketing strategies. As these are free and effective forms of marketing for an E-commerce store.
+
+- Content marketing - Posting content that contains blog posts will be my primary source to display content.
+
+- Social Media - The Facebook platform will help develop a customer base. This will make people aware of the store and the products available. The accumulation of followers will also help and they will hopefully share and like the posts from Kris Kringle . 
+
+- Email marketing - The newsletter is a free source of marketing. The people that subscribe to the newsletter will probably translate into paying customers. This will increase sales and will provide steady traffic of loyal customers.
+
+<a name="social-media"></a>
+
+# 8. Social Media Business Page
+[Go to the top](#table-of-contents)
+
+<img width="939" alt="2023-04-26 (6)" src="https://user-images.githubusercontent.com/88341568/234634165-8997cc3d-938c-43fc-b36f-8d943383f24e.png">
+
+<a name="end-product"></a>
+
+# 9. End Product
+[Go to the top](#table-of-contents)
+
+<a name="known-bugs"></a>
+
+# 10. Known Bugs
+[Go to the top](#table-of-contents)
+
+# 11. Credits
+
+[Go to the top](#table-of-contents)
+
+### Code
+
+### Content
+
+### Project Acknowledgements
+
+- My Mentor
+- Code Institue Tutor Support
+
+
+
+
 
 
 

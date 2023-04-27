@@ -6,6 +6,10 @@ Welcome to Kris Kringle gift store. This an e-commerce store perfect for those s
 
 A live website can be found [here](https://kriskringle.herokuapp.com/).
 
+
+<img width="956" alt="resp design pro 5" src="https://user-images.githubusercontent.com/88341568/234768579-b191401b-4c45-490e-b924-5cf3f325ef12.png">
+
+
 # Table of Contents
 
 -   [1. UX](#ux)

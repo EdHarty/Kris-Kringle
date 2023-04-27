@@ -397,6 +397,10 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 ### Wire-frames
 
+<img width="960" alt="2023-04-27 (36)" src="https://user-images.githubusercontent.com/88341568/234778831-c1e8c349-2592-4441-bfeb-e223c6405ce6.png">
+![image](https://user-images.githubusercontent.com/88341568/234787881-b61dee91-b705-45db-83f7-4946539f6b2b.png)
+
+
 <a name="design"></a>
 
 ## 1.4. Design

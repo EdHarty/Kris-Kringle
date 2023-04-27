@@ -13,7 +13,6 @@ A live website can be found [here](https://kriskringle.herokuapp.com/).
         -   [Project Goals](#project-goals)
             -   [User Goals:](#user-goals)
             -   [User Expectations:](#user-expectations)
-            -   [Trends of Modern Websites](#trends-of-modern-websites)
             -   [Strategy Table](#strategy-table)
     -   [1.2. Structure](#structure)
     -   [1.3. Skeleton](#skeleton)
@@ -401,7 +400,12 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 [Go to the top](#table-of-contents)
 
 ### Colours
+
+I got inspiration for my colour palatte from [here](https://coolors.co/)
+
 ### Typography
+
+I sourced the font for the website from [here](https://fonts.google.com/specimen/Roboto)
 
 <a name="features"></a>
 
@@ -413,11 +417,19 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 - The navigation bar is located at the top of all pages. This contains the product search bar, my account icon and the shopping bag icon. Another section contains the navigation for the products. The navigation bar is dynamic. The site user options change when logged in or out.
 
+<img width="960" alt="logged in as user" src="https://user-images.githubusercontent.com/88341568/234747592-ffdc6d15-cc19-4af9-8a60-b667338d9078.png">
+
+<img width="956" alt="admin signin" src="https://user-images.githubusercontent.com/88341568/234747660-3432f3ba-faff-4d11-b759-dc0805b1a6d0.png">
+
+
 - The footer is located at the bottom of all pages. This contains social media links, a form to subscribe/unsubscribe to the newsletter and store links.
 - The store logo is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
 
 ### Sign Up Page
 - Site users signup entering thier email address and password. There is password confirmation, the password must be identical to the one entered above.
+
+<img width="956" alt="sign up page(reg)" src="https://user-images.githubusercontent.com/88341568/234747850-6d12ae1e-809e-49e9-a7c2-d728f63b5ba1.png">
+
 
 ### Login Page
 - To log in site users must enter their email address and password to enter.
@@ -425,11 +437,21 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 - If an account has not been created. The user can click a link to be redirected to the signup page.
 - If the site user details are entered incorrectly, a message is displayed.
 
+<img width="956" alt="email" src="https://user-images.githubusercontent.com/88341568/234748292-28037709-1271-4235-afa2-f3e4bfa0d1a0.png">
+
+<img width="960" alt="unsuccessful login" src="https://user-images.githubusercontent.com/88341568/234748084-e5c8017a-9787-4c84-a7a9-d7bbe4717cf6.png">
+
+<img width="960" alt="email errors" src="https://user-images.githubusercontent.com/88341568/234748327-14b8a34a-b178-46c0-babd-60ba9527c549.png">
+
+
 ### Logout Page
 - When logging out using the navigation bar, the site user is redirected to a sign-out page to confirm.
 
 ### Landing Page
-- A explore the collection button directs the customer to the all products page. This gives the customer access to all of the available products.
+- A shop now button directs the customer to the all products page. This gives the customer access to all of the available products.
+
+<img width="960" alt="homepage_login_success_admin" src="https://user-images.githubusercontent.com/88341568/234748496-6a32c504-bdd4-4dcf-ab7d-4b97a1571d95.png">
+
 
 ### Products Page
 - The site user can locate specific products by category, using the navigation bar.
@@ -444,6 +466,9 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 - The edit and delete buttons can be seen and used by a site administrator.
 - The minus button is disabled when the quantity selected is one.
 - A success message will pop up to confirm the product has been added to the bag.
+
+<img width="951" alt="shopping bag success" src="https://user-images.githubusercontent.com/88341568/234748605-a89b137d-5126-49a8-b9bc-f0cd94e37909.png">
+
 
 ### Shopping bag Page
 - Products are displayed as line items, showing an image, a product name, the size if relevant, a SKU, the price of item, the quantity, the quantity selector and a subtotal.
@@ -463,7 +488,10 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 ### My Profile Page
 - The site user can update their delivery details and this will then be upadated on the checkout page.
-- The site user can view their order history. The order number can be selected to view any previous orders. 
+- The site user can view their order history. The order number can be selected to view any previous orders.
+
+<img width="956" alt="my profile" src="https://user-images.githubusercontent.com/88341568/234748823-4fc3ee1f-bef9-4589-a865-fef05fc5236c.png">
+
 
 ### Product Management Page
 - This is for site admin only.
@@ -478,12 +506,17 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 - Once they are successfully subscribed to the newsletter, they are redirected to the home page. A success alert message will be displayed confirming successful subscription to the newsletter
 - An error message will appear if user has already subscribed.
 
+<img width="956" alt="newsletter sub" src="https://user-images.githubusercontent.com/88341568/234748909-eeaa7b4d-589f-4ef3-875a-2f04601871aa.png">
+
+
 ### Newsletter Unsubscribe Page
 - The site user must enter thier email address to unsubscribe from the newsletter.
 - Once unsubscribed from the newsletter, the site user will be redirected to the home page. A success alert message will be displayed confirming successful unsubscription to the newsletter
 
-## 3. Technologies Used
+<img width="960" alt="newsletter unsub" src="https://user-images.githubusercontent.com/88341568/234748956-6c488238-d673-457d-9cca-dd49529530fd.png">
 
+<a name="technologies-used"></a>
+## 3. Technologies Used
 [Go to the top](#table-of-contents)
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML)
@@ -530,13 +563,23 @@ I used [Am I Responsive](http://ami.responsivedesign.is) to check if site was re
 #### HTML:
 I used [W3C Markup](https://validator.w3.org/#validate_by_input+with_options) to check for any errors within the HTML pages.
 
+![html](https://user-images.githubusercontent.com/88341568/234749973-471e80a5-a56e-4bce-bce3-48da0987be96.png)
+
+
 #### CSS:
 I used [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) to check for any errors within CSS stylesheets.
+
+![css](https://user-images.githubusercontent.com/88341568/234749908-972a7864-ef10-4d4b-8188-5c12866a414a.png)
+
 
 ### JavaScript:
 I used [JS Hint](https://jshint.com/) to check for any errors within all my JavaScript script files. JS Hint showed warnings but no errors.
 
+![jshint](https://user-images.githubusercontent.com/88341568/234749811-aae6ccfb-4915-450f-80a1-16fb5ad495e2.png)
+
+
 ### Python:
+To check my Python files I used the command python3 -m flake8 in the terminal. The validator showed multiple "line too long" errors. 
 
 ## Manual Testing
 
@@ -743,18 +786,28 @@ I decided to use content marketing, Social media and email marketing as marketin
 # 9. End Product
 [Go to the top](#table-of-contents)
 
+
+
 <a name="known-bugs"></a>
 
 # 10. Known Bugs
 [Go to the top](#table-of-contents)
 
-# 11. Credits
+- The quantity selector for the products had a bug where the minus button was not disabled on mobile devices. This was rectified with CodeInstitute guidance.
 
+<a name="credits"></a>
+# 11. Credits
 [Go to the top](#table-of-contents)
 
 ### Code
 
+- The carousel on the landing page came from [CodePen](https://codepen.io/)
+
 ### Content
+
+- I got the logo [Adobe Creative Cloud Express logo maker](https://www.adobe.com/)
+- I got the image urls from [imgbb](https://imgbb.com/) and [amazon](https://www.amazon.co.uk/)
+
 
 ### Project Acknowledgements
 

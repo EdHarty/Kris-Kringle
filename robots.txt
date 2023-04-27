@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:https://kriskringle.herokuapp.com/sitemap.xml

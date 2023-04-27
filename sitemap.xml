@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kriskringle.herokuapp.com/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/bag/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=jumpers</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=hats/scarves</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=pyjamas</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=jumpers,hats/scarves,pyjamas</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=christmas</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=lighting</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=christmas_gifts,lighting</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/newsletter/unsubscribe</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/blog/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/newsletter/contact</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/235/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/234/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/198/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/232/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/194/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/196/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/197/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/216/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/215/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/236/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/193/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/195/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/199/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/178/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/207/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/217/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/230/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/233/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/201/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/218/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/208/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/227/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/200/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/229/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/206/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/231/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/176/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/211/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/210/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/122/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=essentials</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/214/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/213/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/12/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=activewear</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/150/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=shirts</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/51/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/64/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/119/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/121/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/249/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/243/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/185/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/187/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/184/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/244/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/13/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/245/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/205/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/186/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/188/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/228/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/189/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/246/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/203/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/190/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/247/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/191/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/237/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/248/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/238/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/20/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=kitchen_dining</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/37/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=bed_bath</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/130/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/36/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/113/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/159/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/114/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/240/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/212/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/221/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/239/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/204/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/242/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/226/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/120/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/14/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/97/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/129/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/54/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/83/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/55/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/139/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/80/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/111/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/11/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/23/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/84/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/99/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/109/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/241/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/219/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/225/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/6/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/105/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/66/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/128/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/48/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/116/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/?category=jeans</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/149/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/87/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/49/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/65/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/22/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/25/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://kriskringle.herokuapp.com/products/146/</loc>
+  <lastmod>2023-04-26T23:48:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

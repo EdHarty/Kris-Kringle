@@ -2,6 +2,17 @@ html {
     height: 100%;
 }
 
+#topnav {
+    background-color: rgba(115, 6, 6, 0.553);
+}
+#navbar {
+    background-color: rgba(115, 6, 6, 0.553);
+}
+
+nav li * {
+    color:white;
+}
+
 body {
     background: url('/media/kris_background.png') no-repeat center center fixed; 
     background-size: cover;  
@@ -11,7 +22,7 @@ body {
 }
 
 footer {
-    background-color: rgb(115, 6, 6);
+    background-color: rgba(115, 6, 6, 0.553);
     color: #fff;
   }
 
@@ -34,6 +45,8 @@ footer {
 
 .main-logo-link {
     width: fit-content;
+    padding-bottom: 0%;
+    padding-top: 0%;
 }
 
 .shop-now-button {

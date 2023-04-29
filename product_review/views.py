@@ -9,13 +9,12 @@ from .forms import ReviewForm
 @login_required
 def reveal_reviews(request):
     """ A view to reveal the user's product review """
-    reviews = ProductReview.objects.filter(author=request.user)
-    print(reviews)
+    product_review = ProductReview.objects.filter(author=request.user)
 
     template = 'product_review.html'
 
     context = {
-        'product_review': reviews,
+        'product_review': product_review,
     }
 
     return render(request, template, context)

@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products/css/products.css' %}">
+{% endblock %} 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -106,6 +110,60 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+            <hr class="my-0">
+                <a class="logo-text link-dark my-0" data-bs-toggle="collapse" href="#collapse-reviews" 
+                    role="button" aria-expanded="false" aria-controls="collapse-reviews">            
+                    <p class="py-3 my-0">Reviews ({{ product_reviews | length }})</p>
+                </a>
+                <hr class="my-0">
+            <div class="{% if current_sorting == 'None_None' %}collapse{% endif %}" id="collapse-reviews">
+                {% if product_reviews %}
+                    <!-- Sort selector -->
+                    <div class="sort-select-wrapper my-4">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded border {% if current_sorting != 'None_None' %}border-blue{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort
+                                by...</option>
+                            <option value="date_asc" {% if current_sorting == 'date_asc' %}selected{% endif %}>Date
+                                (older to newest)</option>
+                            <option value="date_desc" {% if current_sorting == 'date_desc' %}selected{% endif %}>
+                                Date (newest to oldest)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>
+                                Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="review-container mt-4">
+                        {% for product_review in product_reviews %}
+                            <div class="my-4 border-bottom">
+                                <h5>{{ review.title }}</h5>
+                                <p>{{ review.content }}</p>
+                                <p class="c--light-blue"><i class="fas fa-star me-1"></i>{{ review.rating }} / 5</p>
+                                <p class="text-muted d-inline small">By {{ review.author }} on {{ review.created_on }}</p>
+                                {% if review.author == request.user %}
+                                    <small class="ms-3 float-end">
+                                        <a href="{% url 'edit_product_review' review.id %}" class="update-link link-dark">Edit</a> |
+                                        <a href="{% url 'delete_review' review.id %}" class="remove-item link-blue float-right" id="remove_{{ item.item_id }}">Delete</a>
+                                    </small>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="my-4">
+                        No reviews for this product yet.
+                    </div>
+                {% endif %}
+                    <a href="{% url 'add_product_review' product.id %}" class="btn btn-main hvr-back-pulse">
+                        <span class="text-uppercase">Leave a Review</span>
+                    </a>
             </div>
         </div>
     </div>

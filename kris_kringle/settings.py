@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', ')gt^du0*+70z_o*2yto7s46mq5qny7y#vx5gwzs(_0((i0bfya')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['kriskringle.herokuapp.com', 'localhost']
 
@@ -133,6 +133,10 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
+    DATABASES = {
+    'default': dj_database_url.parse('postgres://wpqhcgfy:pBnzRlDEiK68ynKAInmGf9G5Xbudsj2G@mel.db.elephantsql.com/wpqhcgfy')
+}
 
 
 # Password validation

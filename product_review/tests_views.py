@@ -28,17 +28,13 @@ class TestReviewsViews(TestCase):
     def test_get_add_product_review_page(self):
         """ Test the add product review page is displayed """
         response = self.client.get(
-            f'/reviews/add_product_review/{self.test_product.id}/')
+            f'/product_review/add_product_review/{self.test_product.id}/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'product_review/add_product_review.html')
 
     def test_get_edit_product_review_page(self):
         """ Test the edit review page is displayed """
-        test_review = ProductReview.objects.create(author=self.test_user,
-                                            product=self.test_product,
-                                            title='Test review',
-                                            content='Test content',
-                                            rating=5)
+        test_review = ProductReview.objects.create(author=self.test_user, product=self.test_product, title='Test review', content='Test content', rating=5)
         response = self.client.get(f'/product_review/edit_product_review/{test_review.id}/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'product_review/edit_product_review.html')

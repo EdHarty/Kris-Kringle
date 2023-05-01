@@ -151,9 +151,9 @@
               <form class="newsletter-form" action="{% url 'newsletter' %}" method="POST">
                 {% csrf_token %}
                   <div class="input-group mb-3">
-                      <input class="form-control" type="email" name="email" placeholder="Enter your email address"
+                      <input class="form-control rounded-0" type="email" name="email" placeholder="Enter your email address"
                           aria-label="Recipient's email" aria-describedby="subscribe-button">
-                      <button class="btn btn-black" id="subscribe-button" type="submit">
+                      <button class="btn btn-black rounded-0" id="subscribe-button" type="submit">
                           <i class="fas fa-paper-plane"></i>
                       </button>
                   </div>

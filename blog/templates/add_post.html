@@ -14,8 +14,10 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-12 col-md-6">
-        <hr>
+        <br>
         <h2 class="logo-font my-4 text-black">Blog Admin</h2>
+        <hr>
+        <br>
         <h5 class="text-black">Add a Blog post</h5>
         <hr>
       </div>
@@ -33,8 +35,8 @@
           {% endif %}
           {% endfor %}
           <div class="text-right">
-            <a href="{% url 'blog' %}" class="btn btn-danger text-white">Cancel</a>
-            <button class="btn btn-black" type="submit">
+            <a href="{% url 'blog' %}" class="btn btn-outline-danger text-black rounded-0">Cancel</a>
+            <button class="btn btn-black rounded-0" type="submit">
               Add Post
             </button>
           </div>

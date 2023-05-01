@@ -9,8 +9,14 @@ html {
     background-color: rgba(115, 6, 6, 0.553);
 }
 
-nav li * {
-    color:white;
+.list-inline-item *,
+icon * {
+    color:white !important;
+}
+
+.dropdown-menu *,
+user-options * {
+    color: black !important;
 }
 
 body {

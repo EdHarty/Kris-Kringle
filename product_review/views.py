@@ -51,7 +51,7 @@ def add_product_review(request, product_id):
         else:
             form = ReviewForm()
 
-    template = 'product_review/add_product_review.html'
+    template = 'add_product_review.html'
 
     context = {
         'product': product,
@@ -88,7 +88,7 @@ def edit_product_review(request, review_id):
         messages.info(request, f'You are editing your review for \
             {review.product.name}')
 
-    template = 'product_review/edit_product_review.html'
+    template = 'edit_product_review.html'
 
     context = {
         'form': form,

@@ -28,23 +28,23 @@ class TestReviewsViews(TestCase):
     def test_get_add_product_review_page(self):
         """ Test the add product review page is displayed """
         response = self.client.get(
-            f'/product_review/add_product_review/{self.test_product.id}/')
+            f'/add_product_review/{self.test_product.id}/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'product_review/add_product_review.html')
+        self.assertTemplateUsed(response, add_product_review.html')
 
     def test_get_edit_product_review_page(self):
         """ Test the edit review page is displayed """
         test_review = ProductReview.objects.create(author=self.test_user, product=self.test_product, title='Test review', content='Test content', rating=5)
-        response = self.client.get(f'/product_review/edit_product_review/{test_review.id}/')
+        response = self.client.get(f'/edit_product_review/{test_review.id}/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'product_review/edit_product_review.html')
+        self.assertTemplateUsed(response, 'edit_product_review.html')
 
     # Tests for page functionality
 
     def test_add_product_review(self):
         """ To test that a review is added to the product """
         # Attempt to add a review
-        self.client.post(f'/product_review/add_product_review/{self.test_product.id}/', {
+        self.client.post(f'/add_product_review/{self.test_product.id}/', {
             'title': 'Test title',
             'content': 'Test content',
             'rating': 5,
@@ -53,7 +53,7 @@ class TestReviewsViews(TestCase):
         self.assertEqual(len(review), 1)
         # Attempt to submit a second review
         response = self.client.post(
-            f'/product_review/add_product_review/{self.test_product.id}/', {
+            f'/add_product_review/{self.test_product.id}/', {
                 'title': 'Test title 2',
                 'content': 'Test content 2',
                 'rating': 5,
@@ -73,7 +73,7 @@ class TestReviewsViews(TestCase):
                                             rating=5)
         # Submit form to edit review with altered content
         response = self.client.post(
-            f'/product_review/edit_product_review/{test_review.id}/', {
+            f'/edit_product_review/{test_review.id}/', {
              'title': test_review.title,
              'content': 'Edited content',
              'rating': test_review.rating,
@@ -93,13 +93,13 @@ class TestReviewsViews(TestCase):
         self.assertEqual(len(ProductReview.objects.all()), 1)
         # Submit form to delete review
         response = self.client.post(
-            f'/product_review/delete_review/{test_review.id}/')
+            f'/delete_review/{test_review.id}/')
         self.assertRedirects(response, f'/products/{test_review.product.id}/')
         self.assertEqual(len(ProductsReview.objects.all()), 0)
 
     def test_update_product_rating(self):
         """ Test the product rating is being updated """
-        self.client.post(f'/product_review/add_product_review/{self.test_product.id}/', {
+        self.client.post(f'/add_product_review/{self.test_product.id}/', {
             'title': 'Test title',
             'content': 'Test content',
             'rating': 4,
@@ -111,7 +111,7 @@ class TestReviewsViews(TestCase):
         self.test_user2 = User.objects.create_user(username='test_user2',
                                                    password='test_password2')
         self.client.login(username='test_user2', password='test_password2')
-        self.client.post(f'/product_review/add_product_review/{self.test_product.id}/', {
+        self.client.post(f'/add_product_review/{self.test_product.id}/', {
             'title': 'Test title',
             'content': 'Test content',
             'rating': 2,

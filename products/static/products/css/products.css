@@ -1,18 +1,13 @@
-#sort-selector {
-    background-color: #f4f6fc !important;
-    color: #001f3d;
-}
-
 /* Product form */
 
 .product-form-field {
-    background-color: #f4f6fc;
-    color: #001f3d !important;
+    background-color: white;
+    color: black !important;
     margin-bottom: 12px;
 }
 
 .product-form-field:focus{
-    background-color: #f4f6fc;
+    background-color: white;
 }
 
 .btn-file {
@@ -32,12 +27,12 @@
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: black;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: white;
+    border-color: black;
     border-radius: 0;
 }
 

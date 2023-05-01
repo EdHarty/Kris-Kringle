@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'product_review/css/product_review.css' %}">
+<link rel="stylesheet" href="{% static 'css/product_review.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -51,8 +51,8 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-end mt-3">
-                        <a class="btn btn-main hvr-back-pulse" href="{% url 'product_detail' product.id %}">Cancel</a>
-                        <button class="btn btn-alternate" type="submit">Add Review</button>
+                        <a class="btn btn-danger btn-main hvr-back-pulse" href="{% url 'product_detail' product.id %}">Cancel</a>
+                        <button class="btn btn-black btn-alternate" type="submit">Add Review</button>
                     </div>
                 </form>
             </div>

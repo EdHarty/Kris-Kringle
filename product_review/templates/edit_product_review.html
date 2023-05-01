@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'product_review/css/product_review.css' %}">
+<link rel="stylesheet" href="{% static 'css/product_review.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -22,22 +22,22 @@
         <!-- Product description -->
         <div class="row">
             <div class="col-6 col-md-3 mb-3">
-                {% if review.product.image %}
-                    <img class="w-100" src="{{ review.product.image.url }}" alt="{{ review.product.name }}">
+                {% if product_review.product.image %}
+                    <img class="w-100" src="{{ product_review.product.image.url }}" alt="{{ product_review.product.name }}">
                 {% else %}
-                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ review.product.name }}">
+                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product_review.product.name }}">
                 {% endif %}
             </div>
             <div class="col-6 col-md-3 mb-3">
-                <p>{{ review.product.name }}</p>
-                <p>{{ review.product.description }}</p>
+                <p>{{ product_review.product.name }}</p>
+                <p>{{ product_review.product.description }}</p>
             </div>
         </div>
 
         <!-- Review form -->
         <div class="row">
             <div class="col-12 col-md-6 mb-3">
-                <form method="POST" action="{% url 'edit_product_review' review.id %}" id="review-form" class="text-muted form mb-5"
+                <form method="POST" action="{% url 'edit_product_review' product_review.id %}" id="review-form" class="text-muted form mb-5"
                     enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}

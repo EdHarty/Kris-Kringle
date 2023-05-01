@@ -81,6 +81,13 @@ def product_detail(request, product_id):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             product_reviews = product_reviews.order_by(sortkey)
+    
+    context = {
+        'product': product,
+        'product_reviews': product_reviews,
+    }
+
+    return render(request, 'products/product_detail.html', context)
 
 
 @login_required

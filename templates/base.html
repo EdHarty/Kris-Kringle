@@ -74,7 +74,7 @@
                           <p class="my-0">My Account</p>
                       </div>
                   </a>
-                  <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                  <div class="dropdown-menu border-0 text-black aria-labelledby="user-options">
                       {% if request.user.is_authenticated %}
                           {% if request.user.is_superuser %}
                               <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
@@ -107,7 +107,7 @@
       </div>
   </div>
   <div id="navbar" class="row">
-    <nav class="navbar navbar-expand-lg navbar-light w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark w-100">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

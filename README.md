@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to Kris Kringle gift store. This e-commerce store is perfect for those searching for the ideal gift for the people nearest and dearest to them. I got the idea for this store while partaking in the family tradition of Kris Kringle (aka Secret Santa). This store is focused toward customers that are looking for the ultimate gift within their budget. The store offers quality gifts at fantastic prices.
+Welcome to the Kris Kringle gift store. This e-commerce store is perfect for those searching for the ideal gift for the people nearest and dearest to them. I got the idea for this store while partaking in the family tradition of Kris Kringle (aka Secret Santa). This store is focused toward customers that are looking for the ultimate gift within their budget. The store offers quality gifts at fantastic prices.
 
 A live website can be found [here](https://kriskringle.herokuapp.com/).
 

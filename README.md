@@ -63,15 +63,15 @@ The main focus for this E-commerce store was to make it intuitive and easy to na
 -   As a customer, I want to quickly identify deals so that I can take advantage of savings on products I'd like to purchase.
 -   As a customer, I want to search for a product by name or description so that I can find a product I'd like to purchase.
 -   As a customer, I want to view individual product details so that I can identify the price, description, product rating, product image and available sizes.
--   As a customer, I want to easily view the total of my purchases at a time so that I can avoid over-spending.
--   As a customer, I want to sort through the available products so that I can easily identify the best rated, best priced products.
--   As a customer, I want to sort a specific category of products so that I can find the best-priced or best-rated products in a specific category.
+-   As a customer, I want to easily view the total cost of my purchases so that I can avoid over-spending.
+-   As a customer, I want to be able to sort through the available products so that I can easily identify the best rated, best priced products.
+-   As a customer, I want to be able to sort through a specific category of products so that I can find the best-priced or best-rated products in a specific category.
 -   As a customer, I want to add items to my basket so that I can view the products I would like to purchase before making payment.
--   As a customer, I want to remove items and update quantities from my basket so that I can remove products I do not want before checking out.
--   As a customer, I want to select the size and quantity of a product when purchasing it so that I can ensure I purhcase the correct product.
--   As a customer, I want to enter my payment information at the checkout page so that I can checkout effortlessly.
+-   As a customer, I want to remove items and update quantities from my basket so that I can remove/update products before checking out.
+-   As a customer, I want to select the size of a product before purchasing so that I can ensure that I purhcase the correct product.
+-   As a customer, I want to enter and save my payment information before checking out so that I can checkout effortlessly.
 -   As a customer, I want to know that my personal/payment information is secure so that I can confidently make a purchase .
--   As a customer, I want to be able to checkout as a guest.
+-   As a customer, I want to be able to checkout as a guest shopper.
 
 Registered User Goals
 -   As a registerd user, I want to create an account.
@@ -81,7 +81,7 @@ Registered User Goals
 -   As a registerd user, I want to register for an account to view my profile.
 
 Frequent Visitor Goals
--  I want to be able to see the latest blog posts.
+-  I want to be able to see the latest blog posts and reviews.
 
 ### User Expectations:
 The website should be easy to navigate.
@@ -89,8 +89,8 @@ The website should be easy to navigate.
 -   The  menu is clear.
 -   The website is responsive on all devices.
 -   The products are conspicuous.
--   The total payment is clearly evident before making completing a purchase.
--   The website responds quickly to any action made.
+-   The total payment is clearly displayed before completing a purchase.
+-   The website responds quickly to user requests.
 
 ### User Stories
 
@@ -111,18 +111,19 @@ Ability to search for products | 5 | 5
 Account signup | 5 | 5
 User profile | 5 | 5
 Responsive design | 5 | 5
-Contact form | 4 | 5
-Add products to the shopping bag | 5 | 5
-Make payment for the selected products | 5 | 5
-Ability to rate products | 5 | 4
-To view blog posts | 5 | 4
-Filters on the products page | 3 | 2
-Subscription based items | 2 | 1
+Contact form | 5 | 5
+Adding products to the shopping bag | 5 | 5
+Making payment for the selected products | 5 | 5
+Ability to rate products | 5 | 5
+To view blog posts | 5 | 5
+To make a review |5 | 5
+Filters on the products page | 5 | 5
+Subscription based items | 5 | 5
 
-Total | 49 | 46
+Total | 60 | 60
 
 ## Scope
-I will phase this project in multiple phases. Phase 1 will be what I have identified as a minimum viable product. Please find below the plans I have for each phase.
+This project will be conducted in two phases. Phase 1 will be the core functionality of the website. Phase 2 will be an augmented and improved version of the website.
 
 ### Phase 1
 - Show a range of christmas related products.
@@ -149,9 +150,9 @@ I will phase this project in multiple phases. Phase 1 will be what I have identi
 The website has a responsive design to ensure a pleasant user experience whilst using different devices. The design is simple and user friendly.
 
 - The header, footer and navigation are consistent through all pages.
-- Footer at the bottom of the each page that links to the social media websites, newsletter subscription.
+- The footer is at the bottom of the each page and contains links to social media websites and a newsletter subscription.
 - Additional features are provided for the shopper once they register an account.
-- 404-error page is included.
+- A 404-error page is included to direct the user back to the website to continue shopping.
 
 ### Database Model
 
@@ -410,7 +411,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 ### Colours
 
-I got inspiration for my colour palatte from [here](https://coolors.co/)
+I got the inspiration for my colour palatte from [here](https://coolors.co/)
 
 ### Typography
 
@@ -424,7 +425,7 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 ### All Pages
 
-- The navigation bar is located at the top of all pages. This contains the product search bar, my account icon and the shopping bag icon. Another section contains the navigation for the products. The navigation bar is dynamic. The site user options change when logged in or out.
+- The navigation bar is located at the top of all of the pages. This contains the product search bar, the my account icon and the shopping bag icon. Another section contains the navigation for the products. The navigation bar is dynamic. The site user options change when logged in or out.
 
 <img width="960" alt="AdminLoggedIn" src="https://user-images.githubusercontent.com/88341568/235657652-798d7bea-2f8b-4cfa-8b89-719a71e08702.png">
 
@@ -434,20 +435,20 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 
 
-- The footer is located at the bottom of all pages. This contains social media links, a form to subscribe/unsubscribe to the newsletter and store links.
-- The store logo is also placed at the top of all pages. Clicking on it will also direct the user to the home page.
+- The footer is located at the bottom of all pages. This contains social media links, a form to subscribe/unsubscribe to the newsletter and has store links.
+- The store logo is also placed at the top of all pages. Clicking on it will direct the user to the home page.
 
 ### Sign Up Page
-- Site users signup entering thier email address and password. There is password confirmation, the password must be identical to the one entered above.
+- Site users signup entering their email address and password. There is password confirmation, the password must be identical to the one entered above.
 
 <img width="960" alt="register" src="https://user-images.githubusercontent.com/88341568/235666356-d8027f92-c22a-4ba5-bc23-08b214a343f3.png">
 
 
 
 ### Login Page
-- To log in site users must enter their email address and password to enter.
+- To log in, site users must enter their email address and password to enter.
 - The site user must activate their account via email to log in.
-- If an account has not been created. The user can click a link to be redirected to the signup page.
+- If an account has not been created. The user can click a link to be directed to the signup page.
 - If the site user details are entered incorrectly, a message is displayed.
 
 <img width="960" alt="Login" src="https://user-images.githubusercontent.com/88341568/235666533-d8cbb3ad-1dcb-479f-b7c2-89390450d04e.png">
@@ -456,7 +457,7 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 
 ### Logout Page
-- When logging out using the navigation bar, the site user is redirected to a sign-out page to confirm.
+- When logging out using the navigation bar, the site user is directed to a sign-out page to confirm.
 
 <img width="956" alt="signout" src="https://user-images.githubusercontent.com/88341568/235666737-d03c96b2-c984-47d0-8b08-6823c1c5e697.png">
 
@@ -489,13 +490,13 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 ### Shopping bag Page
 - Products are displayed as line items, showing an image, a product name, the size if relevant, a SKU, the price of item, the quantity, the quantity selector and a subtotal.
 - The minus button is disabled when the quantity selected is one.
-- A sum total of the contents of the bag is also shown with the shopping bag total, delivery fee.
-- If the free delivery threshold has not been met an alert message is shown, informing the user that they can get free delivery if they spend more .
+- A sum total of the contents of the bag is displayed with the shopping bag total, delivery fee.
+- If the free delivery threshold has not been met an alert message is shown informing the user that they can get free delivery if they spend more.
 
 ### Checkout Page
 - The customer can fill out the delivery details form that has Stripe integration.
-- The customer can select a checkbox to save their details for next time. The card details are not saved.
-- The customers order summary is shown, this ensure the order is correct before continuing and checking out.
+- The customer can select a checkbox to save their details for the next time that they visit the site. The card details are not saved.
+- The customers order summary is shown, this ensures the order is correct before continuing and checking out.
 - An alert is displayed to the customer informing them of the amount they will be charged.
 
 ### Checkout Success Page
@@ -504,7 +505,7 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 ### My Profile Page
 - The site user can update their delivery details and this will then be upadated on the checkout page.
-- The site user can view their order history. The order number can be selected to view any previous orders.
+- The site user can view their order history. The order number can be selected to view all previous orders.
 
 <img width="960" alt="Orderh" src="https://user-images.githubusercontent.com/88341568/235667122-8dd6239c-8253-4ebc-b766-4416f3152ff6.png">
 
@@ -520,7 +521,7 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 ### My Reviews Page
 - Site users can review different products.
-- The can leave a review and edit or delete it.
+- They can leave a review and edit or delete it.
 - Once a review has been left and the user decides to edit it. They are directed to the edit review page where they update their review accordingly.
 
 <img width="960" alt="Review" src="https://user-images.githubusercontent.com/88341568/235667212-61e9de58-2c52-4b5e-abe4-53ea8640b0f6.png">
@@ -528,8 +529,8 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 ### Newsletter Subscribe Page
 - Site users enter their email address to subscribe to the newsletter.
-- Once they are successfully subscribed to the newsletter, they are redirected to the home page. A success alert message will be displayed confirming successful subscription to the newsletter
-- An error message will appear if user has already subscribed.
+- Once they have successfully subscribed to the newsletter, they will be redirected to the home page. A success alert message will be displayed confirming successful subscription to the newsletter.
+- An error message will be displayed if the user has already subscribed.
 
 <img width="960" alt="Newssub" src="https://user-images.githubusercontent.com/88341568/235667281-8c3e488f-c429-4326-a848-2d4ee37c0d19.png">
 
@@ -626,18 +627,19 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Home page | By clicking the "home" link in the navigation bar or on the store logo, the browser redirects me to the home page. | PASS
 All products page | By clicking the "All Products" link in the navigation bar, the category shows a dropdown list with sort/filter options. | PASS
-Kris Kringle page | By clicking the "Kris Kringle" link in the navigation bar, the browser redirects me to the Kris Kringle landing page. | PASS
-Christmas Gifts page | By clicking the "Christmas Gifts" link in the navigation bar, it redirects me to the Christmas Gifts product page. | PASS
-Christmas Lighting page | By clicking the "Christmas Lighting" link in the navigation bar, the browser redirects me to the Christmas Lighting product page. | PASS
+Kris Kringle page | By clicking the "Kris Kringle" link in the navigation bar, the browser directs me to the Kris Kringle landing page. | PASS
+Christmas Gifts page | By clicking the "Christmas Gifts" link in the navigation bar, it directs me to the Christmas Gifts product page. | PASS
+Christmas Lighting page | By clicking the "Christmas Lighting" link in the navigation bar, the browser directs me to the Christmas Lighting product page. | PASS
 Special Offers page | By clicking the "Special Offers" link in the navigation bar, the category shows a dropdown list to sort/filter options. | PASS
-Register page | By clicking the "register" link in the navigation bar, the browser redirects me to the register page. | PASS
-Login / Logout page | By clicking the "login" or "logout links in the navigation bar, the browser redirects me to the login or logout page. | PASS
-Shopping Bag page | By clicking the "Shopping Bag" icon in the navigation bar, the browser redirects me to the basket page. | PASS
-My Profile page | By clicking the "My profile" link in the navigation bar, the browser redirects me to my profile page. | PASS
-Product management page | By clicking the "product management" link as a site admin in the navigation bar, I am directed to the product management page. | PASS
-Blog management page | By clicking the "blog management" link as a sie admin in the navigation bar, the browser redirects me to the blog management page. | PASS
+Register page | By clicking the "Register" link in the navigation bar, the browser directs me to the register page. | PASS
+Login / Logout page | By clicking the "Login" or "Logout" links in the navigation bar, the browser directs me to the login or logout page. | PASS
+Shopping Bag page | By clicking the "Shopping Bag" icon in the navigation bar, the browser directs me to the basket page. | PASS
+My Profile page | By clicking the "My Profile" link in the navigation bar, the browser directs me to my profile page. | PASS
+Product Management page | By clicking the "Product Management" link as a site admin in the navigation bar, I am directed to the product management page. | PASS
+Blog Management page | By clicking the "Blog Management" link as a site admin in the navigation bar, the browser directs me to the blog management page. | PASS
+My Reviews page | By clicking the "My Reviews" link as a site admin in the navigation bar, the browser directs me to the my reviews page. | PASS
 Search bar | When searching for a keyword, the results will show products that contain the keyword in the product name or description. | PASS
-Foreground & background colour | Checked foreground information is not distracted by background elements. | PASS
+Foreground & background colour | Checked foreground information is not effected by background elements. | PASS
 Text | Checked that all fonts and colours used are consistent. | PASS
 
 
@@ -646,12 +648,12 @@ Text | Checked that all fonts and colours used are consistent. | PASS
 All Pages:
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Subscribe to newsletter | By inputting my email in the newsletter form in the footer, I am directed to the home page. A success message pop up is visible. | PASS
-Unsubscribe to newsletter page | By clicking the "unsubscribe" link in the footer, I am directed to the newsletter unsubscribe page. | PASS
+Subscribe to Newsletter | By inputting my email in the newsletter form in the footer, I am directed to the home page. A success message pop up is visible. | PASS
+Unsubscribe to Newsletter page | By clicking the "unsubscribe" link in the footer, I am directed to the newsletter unsubscribe page. | PASS
 Contact Us page | By clicking the "contact us" link in the footer, I am directed to the contact page. | PASS
 Register page | By clicking the "Register" link in the footer, I am directed to the register page.| PASS
 Login page | By clicking the "login" link in the footer, I am directed to the login page. | PASS
-Facebook | By clicking the Facebook icon, a new tab opens and redirects to my Facebook website. | PASS
+Facebook page | By clicking the Facebook icon, a new tab opens and redirects the user to the Kris Kringle Facebook page. | PASS
 Twitter | By clicking the Twitter icon, a new tab opens to the Twitter website. | PASS
 Instagram | By clicking the Instagram icon, a new tab opens to the Instagram website. | PASS
 
@@ -659,13 +661,13 @@ Instagram | By clicking the Instagram icon, a new tab opens to the Instagram web
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view. | PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views. | PASS
 
 ### Products page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | Media assets are displayed properly and are responsive on all devices. | PASS
-Responsiveness | Check every element on the page for scalability in mobile, tablet and desktop view.| PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
 Sort filter | Check the filter functionality by selecting each option. | PASS
 Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only accessible to the Site Admin. | PASS
 
@@ -674,8 +676,8 @@ Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only ac
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly and are responsive on all devices. | PASS
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
-Size selector | Check the size selector functionality by adding each option to shopping bag. | PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
+Size Selector | Check the size selector functionality by adding each option to the shopping bag. | PASS
 Quantity Selector | Check the plus and minus function. | PASS
 Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only accessible to the Site Admin. | PASS
 
@@ -683,31 +685,31 @@ Edit Button/Delete Button (Site Admin) | Check the edit/delete button is only ac
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly and are responsive on all devices. | PASS
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
-Remove item from bag | Clicking remove link on an product removes the product from the bag. | PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
+Remove item/s from bag | Clicking the remove link on a product removes the product from the bag. | PASS
 Quantity Selector | Check the plus and minus function. | PASS
-Free delivery threshold | Adding products to the bag under the €50 threshold for free shipping and over the threshold. A message alert diplayed if under. | PASS
+Free delivery threshold | Adding products that are under/over the €50 threshold for free shipping. An alert message displayed if under. | PASS
 
 ### Checkout page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Media | All media assets are displayed properly and are responsive on all devices. | PASS
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
-Checkout form | Filling in the form with the correct/incorrect details. If incorrect, error message displayed | PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
+Checkout form | Filling in the form with the correct/incorrect details. If incorrect, an error message displayed | PASS
 Save details checkout | Check if saving my details using the checkbox saves/updates my profile details. | PASS
 Card authentication | Used the valid Stripe test card details and invalid details to see alert messages. | PASS
 
 ### Checkout success page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
-Order history | BY clicking on the order number, Iam directed to a past order confirmation summary. | PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
+Order history | Clicking on the order number, I am directed to all past order confirmations summaries. | PASS
 Updating my profile | When updating my delivery information, this is seen on the checkout page. | PASS
 
 ### Product management page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
 Adding a product | When adding a new product, the product is added to the correct category and can found using the search bar. | PASS
 Uploading an image | When uploading a new image, the uploaded file name is displayed. | PASS
 
@@ -716,12 +718,12 @@ TEST            | OUTCOME                          | PASS / FAIL
 --------------- | -------------------------------- | ---------------
 Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
 Adding a Blog post | When adding a blog post, the blog post is added to the main blog section. | PASS
-Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image also shows. | PASS
+Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image is also shown. | PASS
 
 ### My Reviews page
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
-Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Responsiveness | Check the element on the page for scalability on mobile, tablet and desktop views.| PASS
 Adding a Review | When adding a review, the review is added to the main review section. | PASS
 Uploading an image | When uploading an image to a review, the site shows the name of the file that will be uploaded. When checking the all reviews page, the image also shows. | PASS
 

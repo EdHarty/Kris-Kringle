@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to Kris Kringle gift store. This e-commerce store perfect for those searching for the ideal gift for the people nearest and dearest to them. I got the idea for this store while partaking in the family tradition of Kris Kringle (aka Secret Santa). This store is focused toward customers that are looking for the ultimate gift within their budget. The store offers quality gifts at fantastic prices.
+Welcome to Kris Kringle gift store. This e-commerce store is perfect for those searching for the ideal gift for the people nearest and dearest to them. I got the idea for this store while partaking in the family tradition of Kris Kringle (aka Secret Santa). This store is focused toward customers that are looking for the ultimate gift within their budget. The store offers quality gifts at fantastic prices.
 
 A live website can be found [here](https://kriskringle.herokuapp.com/).
 
@@ -14,7 +14,7 @@ A live website can be found [here](https://kriskringle.herokuapp.com/).
 
 -   [1. UX](#ux)
     -   [1.1. Strategy](#strategy)
-        -   [Project Goals](#project-goals)
+            -   [Project Goals](#project-goals)
             -   [User Goals:](#user-goals)
             -   [User Expectations:](#user-expectations)
             -   [Strategy Table](#strategy-table)
@@ -38,7 +38,7 @@ A live website can be found [here](https://kriskringle.herokuapp.com/).
 
 [Go to the top](#table-of-contents)
 
-The main focus for this E-commerce store was to make it intuitive and easy to navigate. It lends itself to all shoppers in need of a gift for the friends or loved ones. Whether you are an organised or a last minute customer this store provides products that are suitable and relevant to Christmas.
+The main focus for this E-commerce store was to make it intuitive and easy to navigate. It lends itself to all shoppers in need of a gift for friends or loved ones. Whether you are an organised or a last minute shopper, this store provides products that are suitable and relevant to Christmas.
 
 <a name="strategy"></a>
 
@@ -48,13 +48,13 @@ The main focus for this E-commerce store was to make it intuitive and easy to na
 
 ### Project Goals
 
-* Responsive design to make the website accessible on different screen sizes.
+-   Responsive design to make the website accessible on different screen sizes.
 
-* Ensure that the navigation of the store is effortless and intuitive.
+-   Ensure that the navigation of the store is effortless and intuitive.
 
-* The website design and colours are easy on the eye.
+-   The website design and colours are easy on the eye.
 
-* The website payment system is secure and easy to use.
+-   The website payment system is secure and easy to use.
 
 ### User Goals:
 
@@ -396,8 +396,9 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 ### Wire-frames
 
-<img width="960" alt="2023-04-27 (36)" src="https://user-images.githubusercontent.com/88341568/234778831-c1e8c349-2592-4441-bfeb-e223c6405ce6.png">
-<img width="960" alt="2023-04-27 (38)" src="https://user-images.githubusercontent.com/88341568/234788496-4662931b-c703-40b6-9422-d04bde159c78.png">
+<img width="960" alt="2023-05-02 (2)" src="https://user-images.githubusercontent.com/88341568/235652914-5a84c693-94d3-4c23-b9e0-4125d761c687.png">
+<img width="960" alt="2023-05-02 (1)" src="https://user-images.githubusercontent.com/88341568/235652996-37fa54e0-f4b3-457a-b39d-7278c49098d6.png">
+
 
 
 
@@ -425,9 +426,12 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 - The navigation bar is located at the top of all pages. This contains the product search bar, my account icon and the shopping bag icon. Another section contains the navigation for the products. The navigation bar is dynamic. The site user options change when logged in or out.
 
-<img width="960" alt="logged in as user" src="https://user-images.githubusercontent.com/88341568/234747592-ffdc6d15-cc19-4af9-8a60-b667338d9078.png">
+<img width="960" alt="AdminLoggedIn" src="https://user-images.githubusercontent.com/88341568/235657652-798d7bea-2f8b-4cfa-8b89-719a71e08702.png">
 
-<img width="956" alt="admin signin" src="https://user-images.githubusercontent.com/88341568/234747660-3432f3ba-faff-4d11-b759-dc0805b1a6d0.png">
+<img width="956" alt="LoginNav" src="https://user-images.githubusercontent.com/88341568/235666171-c77547a8-8f69-4188-8c04-e0ffae2af3bf.png">
+
+
+
 
 
 - The footer is located at the bottom of all pages. This contains social media links, a form to subscribe/unsubscribe to the newsletter and store links.
@@ -436,7 +440,8 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 ### Sign Up Page
 - Site users signup entering thier email address and password. There is password confirmation, the password must be identical to the one entered above.
 
-<img width="956" alt="sign up page(reg)" src="https://user-images.githubusercontent.com/88341568/234747850-6d12ae1e-809e-49e9-a7c2-d728f63b5ba1.png">
+<img width="960" alt="register" src="https://user-images.githubusercontent.com/88341568/235666356-d8027f92-c22a-4ba5-bc23-08b214a343f3.png">
+
 
 
 ### Login Page
@@ -445,20 +450,22 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 - If an account has not been created. The user can click a link to be redirected to the signup page.
 - If the site user details are entered incorrectly, a message is displayed.
 
-<img width="956" alt="email" src="https://user-images.githubusercontent.com/88341568/234748292-28037709-1271-4235-afa2-f3e4bfa0d1a0.png">
+<img width="960" alt="Login" src="https://user-images.githubusercontent.com/88341568/235666533-d8cbb3ad-1dcb-479f-b7c2-89390450d04e.png">
+<img width="956" alt="LoginIncor" src="https://user-images.githubusercontent.com/88341568/235666624-080b1d05-ce75-4574-8e29-261ba7f4790a.png">
 
-<img width="960" alt="unsuccessful login" src="https://user-images.githubusercontent.com/88341568/234748084-e5c8017a-9787-4c84-a7a9-d7bbe4717cf6.png">
-
-<img width="960" alt="email errors" src="https://user-images.githubusercontent.com/88341568/234748327-14b8a34a-b178-46c0-babd-60ba9527c549.png">
 
 
 ### Logout Page
 - When logging out using the navigation bar, the site user is redirected to a sign-out page to confirm.
 
+<img width="956" alt="signout" src="https://user-images.githubusercontent.com/88341568/235666737-d03c96b2-c984-47d0-8b08-6823c1c5e697.png">
+
+
 ### Landing Page
 - A shop now button directs the customer to the all products page. This gives the customer access to all of the available products.
 
-<img width="960" alt="homepage_login_success_admin" src="https://user-images.githubusercontent.com/88341568/234748496-6a32c504-bdd4-4dcf-ab7d-4b97a1571d95.png">
+<img width="956" alt="LoginNav" src="https://user-images.githubusercontent.com/88341568/235666845-f7500322-d206-46c6-a329-17fc1cfe1055.png">
+
 
 
 ### Products Page
@@ -475,7 +482,8 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 - The minus button is disabled when the quantity selected is one.
 - A success message will pop up to confirm the product has been added to the bag.
 
-<img width="951" alt="shopping bag success" src="https://user-images.githubusercontent.com/88341568/234748605-a89b137d-5126-49a8-b9bc-f0cd94e37909.png">
+<img width="960" alt="Shoppingb" src="https://user-images.githubusercontent.com/88341568/235667019-aa08b2b9-c22c-45c7-87b3-920415c7b696.png">
+
 
 
 ### Shopping bag Page
@@ -498,7 +506,8 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 - The site user can update their delivery details and this will then be upadated on the checkout page.
 - The site user can view their order history. The order number can be selected to view any previous orders.
 
-<img width="956" alt="my profile" src="https://user-images.githubusercontent.com/88341568/234748823-4fc3ee1f-bef9-4589-a865-fef05fc5236c.png">
+<img width="960" alt="Orderh" src="https://user-images.githubusercontent.com/88341568/235667122-8dd6239c-8253-4ebc-b766-4416f3152ff6.png">
+
 
 
 ### Product Management Page
@@ -509,19 +518,29 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 - This is for site admin only.
 - Displays a form to add more blog posts.
 
+### My Reviews Page
+- Site users can review different products.
+- The can leave a review and edit or delete it.
+- Once a review has been left and the user decides to edit it. They are directed to the edit review page where they update their review accordingly.
+
+<img width="960" alt="Review" src="https://user-images.githubusercontent.com/88341568/235667212-61e9de58-2c52-4b5e-abe4-53ea8640b0f6.png">
+
+
 ### Newsletter Subscribe Page
 - Site users enter their email address to subscribe to the newsletter.
 - Once they are successfully subscribed to the newsletter, they are redirected to the home page. A success alert message will be displayed confirming successful subscription to the newsletter
 - An error message will appear if user has already subscribed.
 
-<img width="956" alt="newsletter sub" src="https://user-images.githubusercontent.com/88341568/234748909-eeaa7b4d-589f-4ef3-875a-2f04601871aa.png">
+<img width="960" alt="Newssub" src="https://user-images.githubusercontent.com/88341568/235667281-8c3e488f-c429-4326-a848-2d4ee37c0d19.png">
+
 
 
 ### Newsletter Unsubscribe Page
 - The site user must enter thier email address to unsubscribe from the newsletter.
 - Once unsubscribed from the newsletter, the site user will be redirected to the home page. A success alert message will be displayed confirming successful unsubscription to the newsletter
 
-<img width="960" alt="newsletter unsub" src="https://user-images.githubusercontent.com/88341568/234748956-6c488238-d673-457d-9cca-dd49529530fd.png">
+<img width="956" alt="NewsUnsub" src="https://user-images.githubusercontent.com/88341568/235667358-dfe6ea4b-ffe9-4a9f-9686-7730daef46b4.png">
+
 
 <a name="technologies-used"></a>
 ## 3. Technologies Used
@@ -554,7 +573,7 @@ I sourced the font for the website from [here](https://fonts.google.com/specimen
 
 
 -   [Google Fonts](https://fonts.google.com/)
-    -   Google fonts were used to import the **"Be Vietnam Pro"** font into the style.css file which is used on all pages throughout the project.
+    -   Google fonts were used to import the **"Roboto"** font into the style.css file which is used on all pages throughout the project.
 -   [GitHub](https://github.com/)
     -   GitHub was used to store the project's code after being pushed from Git.
 
@@ -696,8 +715,15 @@ Uploading an image | When uploading a new image, the uploaded file name is displ
 TEST            | OUTCOME                          | PASS / FAIL  
 --------------- | -------------------------------- | ---------------
 Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
-Adding a Blog post | When adding a blog post, the blog post is added to the blog main blog section. | PASS
+Adding a Blog post | When adding a blog post, the blog post is added to the main blog section. | PASS
 Uploading an image | When uploading an image to a blog post, the site shows the name of the file that will be uploaded. When checking the all blog posts page, the image also shows. | PASS
+
+### My Reviews page
+TEST            | OUTCOME                          | PASS / FAIL  
+--------------- | -------------------------------- | ---------------
+Responsiveness | Check the element on the page for scalability in mobile, tablet and desktop view.| PASS
+Adding a Review | When adding a review, the review is added to the main review section. | PASS
+Uploading an image | When uploading an image to a review, the site shows the name of the file that will be uploaded. When checking the all reviews page, the image also shows. | PASS
 
 <a name="deployment"></a>
 
@@ -769,6 +795,17 @@ To improve the search engine optimisation (SEO) of the website:
     - Good christmas gift.
     - Christmas last minute gifts.
 
+```python
+
+{% block meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="christmas gift, christmas gift ideas, christmas gifts for men, christmas gifts for women, good christmas gift, christmas last minute gifts">
+    {% endblock %}
+
+```
+
 <a name="marketing"></a>
 
 # 7. Marketing
@@ -794,12 +831,18 @@ I decided to use content marketing, Social media and email marketing as marketin
 # 9. End Product
 [Go to the top](#table-of-contents)
 
-<img width="956" alt="endpro5 (2)" src="https://user-images.githubusercontent.com/88341568/234761860-4da331cb-1890-4f9a-9457-5750ab31eb7c.png">
-<img width="956" alt="endpro4 (2)" src="https://user-images.githubusercontent.com/88341568/234762035-9b0f3dbc-2adf-4ba8-abec-1d75aefc7316.png">
-<img width="960" alt="endpro3 (2)" src="https://user-images.githubusercontent.com/88341568/234762184-9c4ae4af-bf33-4fd6-9c88-9fa0e09c55f0.png">
-<img width="956" alt="endpro2 (2)" src="https://user-images.githubusercontent.com/88341568/234762287-92abfc5b-4070-4aff-aedf-8e9922f242a5.png">
-<img width="956" alt="endpro1 (2)" src="https://user-images.githubusercontent.com/88341568/234762378-7339b60e-223f-4b1c-9c8a-62feb99c3569.png">
-<img width="956" alt="endpro (2)" src="https://user-images.githubusercontent.com/88341568/234762449-ac2c5b47-513e-49c0-b19d-93b39f62b530.png">
+<img width="956" alt="LoginNav" src="https://user-images.githubusercontent.com/88341568/235669331-4aa13fee-7a71-42f0-b8b0-dc71cc672f96.png">
+<img width="956" alt="2023-05-02 (17)" src="https://user-images.githubusercontent.com/88341568/235669112-7b070583-5639-4a35-a35a-4fed90aff4d5.png">
+<img width="960" alt="Shoppingb" src="https://user-images.githubusercontent.com/88341568/235669571-3233f3b9-7a9f-4ec5-93fc-825b840b914b.png">
+<img width="960" alt="Review" src="https://user-images.githubusercontent.com/88341568/235669448-fc18d8c7-f385-4e75-b831-1efe67aa4c25.png">
+<img width="956" alt="blog" src="https://user-images.githubusercontent.com/88341568/235669729-ba8e45f1-01ec-4f17-a4bb-160f258efd9c.png">
+<img width="960" alt="Newssub" src="https://user-images.githubusercontent.com/88341568/235669802-d95e3ff8-4c6a-439d-aec4-d5f87e2f2673.png">
+<img width="960" alt="Orderh" src="https://user-images.githubusercontent.com/88341568/235669957-34099fc1-1e81-442a-adf3-3fa97f807a79.png">
+
+
+
+
+
 
 
 
@@ -810,7 +853,7 @@ I decided to use content marketing, Social media and email marketing as marketin
 # 10. Known Bugs
 [Go to the top](#table-of-contents)
 
-- The quantity selector for the products had a bug where the minus button was not disabled on mobile devices. This was rectified with CodeInstitute guidance.
+- The quantity selector for the products had a bug where the minus button was not disabled on mobile devices. This was rectified with Code Institute guidance.
 
 <a name="credits"></a>
 # 11. Credits

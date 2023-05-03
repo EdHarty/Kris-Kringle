@@ -22,10 +22,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', ')gt^du0*+70z_o*2yto7s46mq5qny7y#vx5gwzs(_0((i0bfya')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['kriskringle.herokuapp.com', 'localhost']
 
@@ -134,6 +134,9 @@ else:
         }
     }
 
+    DATABASES = {
+    'default': dj_database_url.parse('postgres://wpqhcgfy:pBnzRlDEiK68ynKAInmGf9G5Xbudsj2G@mel.db.elephantsql.com/wpqhcgfy')
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

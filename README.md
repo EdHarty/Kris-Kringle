@@ -839,6 +839,8 @@ I decided to use content marketing, Social media and email marketing as marketin
 <img width="956" alt="blog" src="https://user-images.githubusercontent.com/88341568/235669729-ba8e45f1-01ec-4f17-a4bb-160f258efd9c.png">
 <img width="960" alt="Newssub" src="https://user-images.githubusercontent.com/88341568/235669802-d95e3ff8-4c6a-439d-aec4-d5f87e2f2673.png">
 <img width="960" alt="Orderh" src="https://user-images.githubusercontent.com/88341568/235669957-34099fc1-1e81-442a-adf3-3fa97f807a79.png">
+<img width="956" alt="404" src="https://user-images.githubusercontent.com/88341568/235939947-a068b058-4f0e-45a6-a58f-5669f6a58a0e.png">
+
 
 
 

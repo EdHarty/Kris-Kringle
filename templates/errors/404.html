@@ -1,6 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+  <div class="container header-container">
+    <div class="row">
+      <div class="col"></div>
+    </div>
+  </div>
+{% endblock %}
+
 {% block content %}
 
     <!-- Page overlay to cover image -->
@@ -8,6 +16,7 @@
     <div class="container-fluid">
 
         <!-- 404 error main header -->
+        <br>
         <div class="row py-4 border-top border-bottom">
             <div class="col text-center">
                 <h1 class="logo-text">Page not found</h1>
